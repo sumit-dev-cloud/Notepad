@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="favicon.ico" type="image/png">
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> -->
+	<title>Notepad</title>
+</head>
+<body>
+	<h1>NOTEPAD</h1>
+	<div class="container">
+		<!--font-family-->	
+		<select class="select" class="look" onchange="changeFont(this)">
+			<option id="font-family" selected>Font Family</option>
+			<option value="Arial">Arial</option>
+			<option value="Minion">Minion</option>
+			<option value="Verdana">Verdana</option>
+			<option value="Blackletter">Blackletter</option>
+		</select>
+		<!--font-color-->
+		<select class="select" onchange="changeColor(this)"/>
+			<option value=''>Font-color</option>
+			<option value="red">Red</option>
+			<option value="blue">Blue</option>
+			<option value="green">Green</option>
+			<option value="tomato">Tomato</option>
+			<option value="Orange">Orange</option>
+			<option value="DodgerBlue">DodgerBlue</option>
+			<option value="MediumSeaGreen">MediumSeaGreen</option>
+			<option value="Gray">Gray</option>
+			<option value="SlateBlue">SlateBlue</option>
+			<option value="Violet">Violet</option>
+			<option value="LightGray">LightGray</option>
+		</select> 
+		<!--background-color-->
+		<select class="select" onchange="changeBack(this)">
+			<option value=''>Background color</option>
+			<option value="red">Red</option>
+			<option value="blue">Blue</option>
+			<option value="green">Green</option>
+			<option value="tomato">Tomato</option>
+			<option value="Orange">Orange</option>
+			<option value="DodgerBlue">DodgerBlue</option>
+			<option value="MediumSeaGreen">MediumSeaGreen</option>
+			<option value="Gray">Gray</option>
+			<option value="SlateBlue">SlateBlue</option>
+			<option value="Violet">Violet</option>
+			<option value="LightGray">LightGray</option>
+		</select>
+		<!--font-size-->
+		<select class="select" class="size" onchange="changeSize(this)">
+			<option >size</option>
+			<option value="10">10</option>
+			<option value="12">12</option>
+			<option value="14">14</option>
+			<option value="16">16</option>	
+			<option value="18">18</option>
+			<option value="20">20</option>
+			<option value="22">22</option>
+			<option value="24">24</option>
+			<option value="26">26</option>
+			<option value="28">28</option>
+			<option value="30">30</option>
+		</select>
+		<!--text-decoration-->
+		<button value="bold" class="upper" onclick="bold()">Bold</button>
+		<button value="Italic" class="upper" onclick="itali()">Italic</button>
+		<button value="Underline" class="upper" onclick="under()">Underline</button>	
+	</div>	
+		<textarea id="content" value="text" rows="10" cols="40" placeholder="......"></textarea>
+		<input type="button" value="Reset" class="reset" onclick="normal_click()"/>
+		<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
